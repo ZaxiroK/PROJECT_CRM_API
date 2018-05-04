@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+      <title>Register</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="MenuPrincipal/estilos.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
+   </head>
+   <style>
+            body {
+               background-image: url("https://st3.depositphotos.com/2007501/12742/i/950/depositphotos_127420076-stock-photo-gray-and-white-marble-backgrounds.jpg");
+             }
+  </style>
+   <body>
+      <header>
+         <nav class="navbar navbar-inverse navbar-stactic-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-Wil">
+                  <span class="sr-only" Desplegar / Ocultar Menu></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+               </div>
+               <!-- Inicia Menu -->
+               <div class="collapse navbar-collapse" id="navegacion-Wil">
+                  <a href="UserLogin.html" class="btn btn-lg btn-primary navbar-right" id="btnCerrarSesion">Cerrar Sesion</a>
+                  <label  id="usuario"class= "navbar-right" for="name"></label>
+                  <label class= "navbar-right"  id="bienvenido"  for="name  ">Bienvenido</label>
+                  <ul class="nav navbar-nav">
+                     <!--<td><a href= "demo.php?editar=   
+                        <?php// echo $id; ?>    ">Editar</a></td>-->
+                     <li>
+                         <a href="MenuPrincipal.html">Home</a>
+                     </li>
+                     <li>
+                        <a href="UserTable.html">User</a>
+                     </li>
+                     <li>
+                        <a href="ClientTable.html">Client</a>
+                     </li>
+                     <li>
+                        <a href="ContactTable.html">Contac</a>
+                     </li>
+                     <li>
+                        <a href="MeetingTable.html">Meeting</a>
+                     </li>
+                     <li>
+                        <a href="SupportTable.html">Support Ticket</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <body onload = "CONTACT.ComboboxClient();">
+      
+         <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 myform-cont" >
+               <div class="myform-top">
+                  <div class="myform-top-left">
+                     <h3>Registro de Contact</h3>
+                     <p>Digite los datos que se le indican para su registro:</p>
+                  </div>
+                  <div class="myform-top-right">
+                     <i class="fa fa-key"></i>
+                  </div>
+               </div>
+               <div class="myform-bottom">
+                  
+                  <div class="form-group" >
+                        <label asp-for="client" class="control-label">Cliente:</label>
+                              <select id = "clientCombo" asp-for="client" class="form-control" >
+                                    
+                              </select>
+                  </div>
+                  <div class="form-group">
+                     <input type="text" name="name" placeholder="NAME..." required class="form-control" id="name" >
+                  </div>
+                  <div class="form-group">
+                     <input type="text" name="lastname" placeholder="LASTNAME..." required class="form-control" id="lastname" >
+                  </div>
+                  <div class="form-group">
+                     <div class="form-group">
+                        <input type="text" name="email" placeholder="EMAIL..." required class="form-control" id="email" >
+                     </div>
+                     <div class="form-group">
+                        <input type="text" name="phone" placeholder="PHONE..." required class="form-control" id="phone" >
+                     </div>
+                     <div class="form-group">
+                        <input type="text" name="job" placeholder="JOB..." required class="form-control" id="job" >
+                     </div>
+                     
+                     <button type = "submit" class= "btn btn-lg btn-success" onclick="CONTACT.RegisterContact();">Registrarse</button>
+                     <a href= "ContactTable.html" class="btn btn-lg btn-primary ">Cancelar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/contact.js"></script>
+   </body>
+   
+</html>

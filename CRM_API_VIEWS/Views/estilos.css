@@ -1,0 +1,82 @@
+.navbar {
+    margin-bottom: 0
+}
+body {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    background-image: url(../img/78899.jpg)
+}
+#btnEmpezarGC {
+    height: 50px;
+    font-size: 20px;
+    color: black;
+
+}
+#titulo1 {
+    color: orange;
+    font: 700% a;
+}
+#titulo2 {
+    color: black;
+    font: 500% a;
+}
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+h1,
+h2 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 100;
+    line-height: 50px;
+}
+p {
+    color: black;
+    font: 200% a;
+}
+/* Contenidos y Formulario*/
+
+.my-content {
+    padding: 100px 0 px 0;
+}
+.my-content .mydescription {
+    margin: 20px 0 10px 0;
+}
+.my-content .mydescription p {
+    opacity: 0.8;
+}
+.myform-cont {
+    margin-top: 35px;
+    padding: 0 25px 15px 25px;
+    background: rgba(0, 0, 0, 0.35);
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+.btn-group {
+    margin: 30px 0 10px 25px;
+    ;
+}
+#btnCerrarSesion {
+    font-size: 13px;
+    margin: 5px 0 1px 25px;
+    right: 100px
+}
+#bienvenido {
+    position: relative;
+    top: 7px;
+       margin: 5px 0 1px 25px;
+    font-size: 20px
+}
+#usuario {
+    position: relative;
+    top: 7px;
+  margin: 5px 0 1px 25px;
+    font-size: 20px
+}

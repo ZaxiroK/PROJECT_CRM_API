@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+      <title>Show</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="MenuPrincipal/estilos.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
+   </head>
+   <style>
+        body {
+           background-image: url("https://st3.depositphotos.com/2007501/12742/i/950/depositphotos_127420076-stock-photo-gray-and-white-marble-backgrounds.jpg");
+         }
+</style>
+   <body>
+      <header>
+         <nav class="navbar navbar-inverse navbar-stactic-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-Wil">
+                  <span class="sr-only" Desplegar / Ocultar Menu></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+               </div>
+               <!-- Inicia Menu -->
+               <div class="collapse navbar-collapse" id="navegacion-Wil">
+                    <a href="UserLogin.html" class="btn btn-lg btn-primary navbar-right" id="btnCerrarSesion">Cerrar Sesion</a>
+                  <label  id="name"class= "navbar-right" for="name"> </label>
+                  <label class= "navbar-right"  id="bienvenido"  for="name  ">Bienvenido</label>
+                  <ul class="nav navbar-nav">
+                     <!--<td><a href= "demo.php?editar=   <?php// echo $id; ?>    ">Editar</a></td>-->
+                     <li>
+                        <a href="MenuPrincipal.html">Home</a>
+                    </li>
+                     <li>
+                        <a href="UserTable.php">User</a>
+                     </li>
+                     <li>
+                        <a href="ClientTable.php">Client</a>
+                     </li>
+                     <li>
+                        <a href="ContactTable.php">Contac</a>
+                     </li>
+                     <li>
+                        <a href="MeetingTable.php">Meeting</a>
+                     </li>
+                     <li>
+                        <a href="SupportTable.php">Support Ticket</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <body>
+         <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 myform-cont" >
+               <div class="myform-top">
+                  <div class="myform-top-left">
+                     <h3>Peril del usuario</h3>
+                  </div>
+                  <div class="myform-top-right">
+                     <i class="fa fa-key"></i>
+                  </div>
+               </div>
+               <div class="myform-bottom">
+                  <div class="form-group"> 
+                     <label >ID:</label>       
+                     <label id = "id"></label> <br>
+                     <label >USERNAME:</label> 
+                     <label id = "username"></label>   <br>
+                     <label >NAME:</label> 
+                     <label id = "realname"></label>    <br>
+                     <label >LASTNAME:</label> 
+                     <label id = "lastname"></label>    <br>          
+                     <input type="checkbox" name="admin" onclick="return false;" id="administrador"> Administrador?<br>
+                  </div>
+                  <button  type = "submit" class= "btn btn-lg btn-danger" onclick="USER.DeleteUser();">Eliminar</button>
+                  <a href= "UserTable.html" class="btn btn-lg btn-primary ">Salir</a>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="js/user.js"></script>
+         <script type ="text/javascript">
+            let params = new URLSearchParams(document.location.search.substring(1));
+            let id = parseInt(params.get("id")); 
+                       $(document).ready(function(){
+                           USER.getUserByIdLabels(id);
+                       });
+         </script> 
+   </body>
+</html>

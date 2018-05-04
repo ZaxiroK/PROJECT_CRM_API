@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+      <title>Client</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="MenuPrincipal/estilos.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
+      
+   </head>
+   <style>
+        body {
+           background-image: url("https://st3.depositphotos.com/2007501/12742/i/950/depositphotos_127420076-stock-photo-gray-and-white-marble-backgrounds.jpg");
+         }
+</style>
+   <body>
+      
+      <header>
+         <nav class="navbar navbar-inverse navbar-stactic-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-Wil">
+                  <span class="sr-only" Desplegar / Ocultar Menu></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+               </div>
+               <!-- Inicia Menu -->
+               <div class="collapse navbar-collapse" id="navegacion-Wil">
+                  <a href="UserLogin.html" class="btn btn-lg btn-primary navbar-right" id="btnCerrarSesion">Cerrar Sesion</a>
+                  <label  id="usuario"class= "navbar-right" for="name"></label>
+                  <label class= "navbar-right"  id="bienvenido"  for="name  ">Bienvenido</label>
+                  <ul class="nav navbar-nav">
+                     <!--<td><a href= "demo.php?editar=   <?php// echo $id; ?>    ">Editar</a></td>-->
+                     <li>
+                         <a href="MenuPrincipal.html">Home</a>
+                    </li>
+                     <li>
+                        <a href="UserTable.html">User</a>
+                     </li>
+                     <li>
+                        <a href="ClientTable.html">Client</a>
+                     </li>
+                     <li>
+                        <a href="ContactTable.html">Contac</a>
+                     </li>
+                     <li>
+                        <a href="MeetingTable.html">Meeting</a>
+                     </li>
+                     <li>
+                        <a href="SupportTable.html">Support Ticket</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <body onload = "USER.getUsers();">
+      
+         <div class="container mb-4">
+         <a href= "UserRegister.html" class="btn btn-lg btn-primary ">Crear</a>
+         <div class="row">
+         <div class="col-12">
+            <div class="table-responsive">
+               <table class="table table-striped">
+                  <thead>
+                     <tr>
+                        <th scope="col">USERNAME</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">LASTNAME</th>
+                        <th scope="col">ADMINISTRADOR?</th>
+                        <th scope="col">UPDATE</th>
+                        <th scope="col">SHOW</th>
+                        <th> </th>
+                     </tr>
+                  </thead>
+                  <tbody id="userTable"> 
+                  </tbody>
+               </table>
+            </div>
+         </div>
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/user.js"></script>
+</html>
