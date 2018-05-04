@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  TITLE: MyString
+  DAY_TIME: MyString
+  USER_ID: MyString
+  IS_VITUAL: false
+  CLIENT_ID: MyString
+
+two:
+  TITLE: MyString
+  DAY_TIME: MyString
+  USER_ID: MyString
+  IS_VITUAL: false
+  CLIENT_ID: MyString
